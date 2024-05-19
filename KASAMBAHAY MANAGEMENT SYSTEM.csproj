@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E72B7DAA-E860-453D-A947-93645C0CD286}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KASAMBAHAY_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>KASAMBAHAY MANAGEMENT SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.9.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.Charts.WinForms.1.0.9\lib\net461\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net461\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\DLL-20231201T161220Z-001\DLL\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup">
+      <HintPath>..\DLL-20231201T161220Z-001\DLL\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addnew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnew.Designer.cs">
+      <DependentUpon>addnew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addnewcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewcase.Designer.cs">
+      <DependentUpon>addnewcase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cases.Designer.cs">
+      <DependentUpon>Cases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employer.Designer.cs">
+      <DependentUpon>Employer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployersRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployersRecords.Designer.cs">
+      <DependentUpon>EmployersRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fulllist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullList.Designer.cs">
+      <DependentUpon>Fulllist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasambahay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasambahay.Designer.cs">
+      <DependentUpon>Kasambahay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasambahayform2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasambahayform2.Designer.cs">
+      <DependentUpon>kasambahayform2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasambahayform3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasambahayform3.Designer.cs">
+      <DependentUpon>Kasambahayform3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasambahayform4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasambahayform4.Designer.cs">
+      <DependentUpon>Kasambahayform4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasambahayform5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasambahayform5.Designer.cs">
+      <DependentUpon>Kasambahayform5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasambahaypopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasambahaypopup.Designer.cs">
+      <DependentUpon>kasambahaypopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasambahayRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasambahayRecords.Designer.cs">
+      <DependentUpon>KasambahayRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="monthlyreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monthlyreport.Designer.cs">
+      <DependentUpon>monthlyreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFullList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFullList.Designer.cs">
+      <DependentUpon>ViewFullList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xMAIN.Designer.cs">
+      <DependentUpon>xMAIN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addnew.resx">
+      <DependentUpon>addnew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnewcase.resx">
+      <DependentUpon>addnewcase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cases.resx">
+      <DependentUpon>Cases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer.resx">
+      <DependentUpon>Employer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployersRecords.resx">
+      <DependentUpon>EmployersRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasambahay.resx">
+      <DependentUpon>Kasambahay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasambahayform2.resx">
+      <DependentUpon>kasambahayform2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasambahayform3.resx">
+      <DependentUpon>Kasambahayform3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasambahayform4.resx">
+      <DependentUpon>Kasambahayform4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasambahayform5.resx">
+      <DependentUpon>Kasambahayform5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasambahaypopup.resx">
+      <DependentUpon>kasambahaypopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasambahayRecords.resx">
+      <DependentUpon>KasambahayRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthlyreport.resx">
+      <DependentUpon>monthlyreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFullList.resx">
+      <DependentUpon>ViewFullList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xMAIN.resx">
+      <DependentUpon>xMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo__2_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Label %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Divider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Divider %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUCCESS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monthy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 39 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bg %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot %28242%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 173.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 39 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1731.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 39 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Total Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Total Users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 39 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 3621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle 2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle 2 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Combined Shape-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
